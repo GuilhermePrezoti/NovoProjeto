@@ -23,7 +23,7 @@ def Jogo():
                             'B)Lula\n'
                             'C)Neymar Junior\n'
                             'D)Bob Esponja\n'))
-    if pergunta1 == "A":
+    if pergunta1.upper() == "A":
         print('Correto! Próxima Pergunta :)')
     else:
         print('Você não mora no Brasil! Tente Novamente!')
@@ -34,7 +34,7 @@ def Jogo():
                             'B)Gatos\n'
                             'C)Matilha\n'
                             'D)Alcateia\n'))
-    if pergunta2 == "C":
+    if pergunta2.upper() == "C":
         print('Correto! Próxima Pergunta :)')
     else:
         print('Incorreta! Próxima Pergunta!')
@@ -46,9 +46,9 @@ def Jogo():
                             'C)Daniel\n'
                             'D)Akira\n'
                             'E)...'))
-    if pergunta3 == "A" or "B" or "C" or "D":
+    if pergunta3.upper() == "A" or "B" or "C" or "D":
         print('Correto! Próxima Pergunta :)')
-    else:
+    elif pergunta3.upper() == "E":
         print('Eles são os melhores professores do Senac!')
 
 
@@ -58,9 +58,9 @@ def Jogo():
                             'C)Flamengo\n'
                             'D)Vasco\n'))
 
-    if pergunta4 == "C":
+    if pergunta4.upper() == "C":
         print('Correto! Próxima Pergunta :)')
-    elif pergunta4 == "A":
+    elif pergunta4.upper() == "A":
         print('Palmeiras Não tem Mundial, Palmeiras não tem mundial,\n'
               'é Bi-Rebaixado e não tem mundial\n'
               'é Bi-Rebaixado e não tem mundial\n')
@@ -73,7 +73,7 @@ def Jogo():
                             'B)Washington\n'
                             'C)Brasil\n'
                             'D)Lisboa\n'))
-    if pergunta5 == "A":
+    if pergunta5.upper() == "A":
         print('Correto! Próxima Pergunta :)')
     else:
         print('Incorreto! Próxima Pergunta!')

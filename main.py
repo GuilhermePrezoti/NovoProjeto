@@ -1,6 +1,10 @@
 import mysql.connector
 from mysql.connector import errorcode
-import Projeto
+import conexao
+import menu
+import operacoes
+
 
 if __name__ == "__main__":
-    Projeto.Jogo()
+    menu.operacao()
+
