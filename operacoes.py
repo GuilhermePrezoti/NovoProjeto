@@ -25,9 +25,9 @@ def consultar():
     except Exception as erro:
         print(erro)
 
-def atualizar(codigo, novasPerguntas, novasRespostas):
+def atualizar(cod, novasPerguntas, novasRespostas):
     try:
-        sql = "update jogo set {} = '{}' where codigo = '{}'".format(codigo, novasPerguntas, novasRespostas)
+        sql = "update jogo set {} = '{}' where codigo = '{}'".format(novasPerguntas, novasRespostas, cod)
         con.execute(sql)
         db_connection.commit()
         print('{} Atualizado!'.format(con.rowcount))
@@ -36,7 +36,7 @@ def atualizar(codigo, novasPerguntas, novasRespostas):
 
 def excluir(cod):
     try:
-        sql = "delete jogo where codigo = '{}'".format(cod)
+        sql = "delete from jogo where codigo = '{}'".format(cod)
         con.execute(sql)
         db_connection.commit()
         print('{} Excluido!'.format(con.rowcount))
